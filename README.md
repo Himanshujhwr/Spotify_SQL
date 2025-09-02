@@ -37,6 +37,25 @@ CREATE TABLE spotify (
     most_played_on VARCHAR(50)
 );
 ```
+```sql
+INSERT INTO spotify (
+    artist, track, album, album_type, danceability, energy, loudness, speechiness, 
+    acousticness, instrumentalness, liveness, valence, tempo, duration_min, title, 
+    channel, views, likes, comments, licensed, official_video, stream, energy_liveness, most_played_on
+)
+VALUES
+('Taylor Swift', 'Love Story', 'Fearless', 'album', 0.8, 0.6, -8.2, 0.05, 0.1, 0.0, 0.15, 0.9, 120.3, 3.56, 'Romantic Pop', 'VEVO', 5000000, 200000, 15000, TRUE, TRUE, 1000000, 0.75, 'Spotify'),
+('Ed Sheeran', 'Perfect', 'Divide', 'album', 0.72, 0.65, -7.8, 0.03, 0.2, 0.0, 0.13, 0.85, 130.5, 4.24, 'Acoustic Love', 'YouTube', 15000000, 450000, 50000, TRUE, TRUE, 2000000, 0.78, 'YouTube'),
+('Adele', 'Hello', '25', 'album', 0.65, 0.5, -9.5, 0.04, 0.18, 0.0, 0.1, 0.7, 110.2, 4.55, 'Emotional Ballad', 'VEVO', 10000000, 300000, 20000, TRUE, TRUE, 3000000, 0.6, 'Spotify'),
+('The Weeknd', 'Blinding Lights', 'After Hours', 'album', 0.9, 0.85, -6.5, 0.07, 0.15, 0.0, 0.2, 0.95, 171.1, 3.5, 'Synthwave Pop', 'YouTube', 20000000, 600000, 45000, TRUE, TRUE, 5000000, 1.05, 'Spotify'),
+('Drake', 'Gods Plan', 'Scorpion', 'album', 0.82, 0.7, -8.0, 0.1, 0.12, 0.0, 0.25, 0.8, 154.3, 3.9, 'Rap Anthem', 'VEVO', 30000000, 1000000, 80000, TRUE, TRUE, 8000000, 0.95, 'Apple Music'),
+('BTS', 'Dynamite', 'BE', 'single', 0.88, 0.9, -5.5, 0.06, 0.1, 0.0, 0.3, 0.92, 114.4, 3.19, 'Disco Pop', 'YouTube', 50000000, 1200000, 150000, TRUE, TRUE, 10000000, 1.2, 'Spotify'),
+('Billie Eilish', 'Bad Guy', 'When We All Fall Asleep', 'album', 0.78, 0.82, -6.9, 0.08, 0.13, 0.0, 0.18, 0.88, 135.6, 3.22, 'Dark Pop', 'VEVO', 25000000, 750000, 60000, TRUE, TRUE, 7000000, 1.0, 'YouTube'),
+('Imagine Dragons', 'Believer', 'Evolve', 'album', 0.75, 0.86, -5.7, 0.05, 0.2, 0.0, 0.2, 0.9, 123.5, 3.37, 'Alternative Rock', 'YouTube', 40000000, 950000, 70000, TRUE, TRUE, 9000000, 1.1, 'Spotify'),
+('Dua Lipa', 'Levitating', 'Future Nostalgia', 'album', 0.85, 0.78, -7.2, 0.06, 0.15, 0.0, 0.17, 0.94, 103.6, 3.25, 'Disco Revival', 'VEVO', 35000000, 850000, 65000, TRUE, TRUE, 8500000, 0.9, 'Apple Music'),
+('Shawn Mendes', 'Senorita', 'Single', 'single', 0.8, 0.72, -8.1, 0.04, 0.1, 0.0, 0.22, 0.89, 117.2, 3.1, 'Pop Duet', 'YouTube', 22000000, 500000, 30000, TRUE, TRUE, 6000000, 0.85, 'Spotify');
+
+```
 ## Project Steps
 
 ### 1. Data Exploration
